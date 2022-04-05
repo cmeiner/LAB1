@@ -1,0 +1,6 @@
+GET http://localhost:3000/boxes
+
+###
+
+POST http://localhost:3000/boxes
+Content-Type:  application/json
