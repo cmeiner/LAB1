@@ -52,9 +52,22 @@ app.put('/boxes/:ID', (req, res) => {
     return res.send('Uppdaterade box#' + boxID + ' med ändringen: ' + JSON.stringify(updatedBox))
 })
 
-// app.post
 
-// server.delete
+app.delete('/boxes/:ID', (req, res) => {
+    let boxID = parseInt(req.params.ID)
+    let foundBox = boxes.find((box) => box.id === boxID)
+
+    if(!foundBox) return res.status(404).send('The requested box could not be found!')
+
+    let updatedBoxes = boxes.filter((box) => box.id !== boxID)
+    fs.writeFile(boxFile, JSON.stringify(updatedBoxes), function writeJSON(err) {
+        if (err) return console.error(err)
+        console.log('Box borttagen') 
+    })
+    return res.send('Box#' + boxID + ' borttagen.')
+})
+
+
 app.listen(port, () => {
     console.log(`App is running on port ${port}`)
 })
