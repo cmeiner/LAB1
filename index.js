@@ -2,7 +2,6 @@ const express = require('express')
 const fs = require('fs')
 const port = 3000
 const app = express()
-
 const boxFile = './boxes.json'
 const boxes = require(boxFile)
 
@@ -31,21 +30,31 @@ app.post('/boxes', (req, res) => {
 })
 
  
-app.listen(port, () => {
-    console.log(`App is running on port ${port}`)
-})
 
 app.put('/boxes/:ID', (req, res) => {
     let boxID = parseInt(req.params.ID)
-    let foundBox = boxes.find((box) => boxes.id === BoxID)
+    let foundBox = boxes.find((box) => box.id === boxID)
 
     if(!foundBox) return res.status(404).send('The requested box could not be found!')
-
+    
     let updatedBox = {"id": boxID, "color" : "idk green or something", "size" : "prob tiny", "contains" : "Nocco"}
-
-
+    let updatedBoxes = boxes.map(box => {
+        if(box.id === boxID) {
+            box = updatedBox
+            return box
+        }
+        return box
+    })
+    fs.writeFile(boxFile, JSON.stringify(updatedBoxes), function writeJSON(err) {
+        if (err) return console.error(err)
+        console.log('Box ändrad') 
+    })
+    return res.send('Uppdaterade box#' + boxID + ' med ändringen: ' + JSON.stringify(updatedBox))
 })
 
 // app.post
 
 // server.delete
+app.listen(port, () => {
+    console.log(`App is running on port ${port}`)
+})
