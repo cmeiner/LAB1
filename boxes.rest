@@ -7,10 +7,10 @@ Content-Type:  application/json
 
 ###
 
-PUT http://localhost:3000/boxes/2
+PUT http://localhost:3000/boxes/3
 Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/boxes/2
+DELETE http://localhost:3000/boxes/4
 Content-Type: application/json
