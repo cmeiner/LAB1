@@ -8,8 +8,8 @@ body {
   background-color: #181818;
   color: #3e90c9;
   text-shadow: #3e90c9 1px 1px 30px;
-  height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -23,7 +23,6 @@ h1 {
 }
 
 .main {
-  height: 80vh;
   text-shadow: none;
   font-size: 2rem;
 }
@@ -36,11 +35,43 @@ button {
   background: none;
   cursor: pointer;
 }
-button:hover {
+
+#main-content {
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.box-class {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .footer {
   text-shadow: none;
+}
+
+#renderedCard {
+  border: 5px #3e90c9 solid;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 20rem;
+  height: 20rem;
+}
+
+#goToButton {
+  font-size: small;
+  justify-self: flex-end;
+  align-self: center;
+  width: fit-content;
 }
 
 .flex-center {

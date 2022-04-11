@@ -1,26 +1,44 @@
 [
-  {
-    "id": 1,
-    "color": "idk green or something",
-    "size": "prob tiny",
-    "contains": "Nocco"
-  },
-  {
-    "id": 3,
-    "color": "pink",
-    "size": "tiny",
-    "contains": "Nocco"
-  },
-  {
-    "id": 5,
-    "color": "pink",
-    "size": "tiny",
-    "contains": "Nocco"
-  },
-  {
-    "id": 6,
-    "color": "pink",
-    "size": "tiny",
-    "contains": "Nocco"
-  }
+ {
+  "id": 1,
+  "color": "Violet",
+  "size": "Small",
+  "contains": "Shoes"
+ },
+ {
+  "id": 2,
+  "color": "Pink",
+  "size": "prob tiny",
+  "contains": "Nocco"
+ },
+ {
+  "id": 3,
+  "color": "pink",
+  "size": "tiny",
+  "contains": "Nocco"
+ },
+ {
+  "id": 4,
+  "color": "pink",
+  "size": "tiny",
+  "contains": "Nocco"
+ },
+ {
+  "id": 5,
+  "color": "pink",
+  "size": "tiny",
+  "contains": "Nocco"
+ },
+ {
+  "id": 6,
+  "color": "pink",
+  "size": "tiny",
+  "contains": "Nocco"
+ },
+ {
+  "id": 7,
+  "color": "pink",
+  "size": "tiny",
+  "contains": "Nocco"
+ }
 ]

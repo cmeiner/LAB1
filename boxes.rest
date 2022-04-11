@@ -2,13 +2,29 @@ GET http://localhost:3000/boxes
 
 ###
 
+GET http://localhost:3000/boxes/2
+### 
+
 POST http://localhost:3000/boxes
 Content-Type:  application/json
 
+{
+    "color": "grey",
+    "size": "semi-large",
+    "contains": "Water"
+}
+
 ###
 
-PUT http://localhost:3000/boxes/3
+PUT http://localhost:3000/boxes/2
 Content-Type: application/json
+
+{
+    "id": 2,
+    "color": "Pink",
+    "size": "prob tiny",
+    "contains": "Nocco"
+}
 
 ###
 
