@@ -23,8 +23,8 @@ app.get("/api/boxes/:ID", (req, res) => {
 
 app.post("/api/boxes", (req, res) => {
   let newBox = {
-    ...req.body,
     id: boxes.length + 1,
+    ...req.body,
   };
   boxes.push(newBox);
 

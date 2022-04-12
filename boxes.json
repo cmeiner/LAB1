@@ -1,9 +1,9 @@
 [
  {
   "id": 1,
-  "color": "Violet",
-  "size": "Small",
-  "contains": "Shoes"
+  "color": "Blå",
+  "size": "prob tiny",
+  "contains": "Nocco"
  },
  {
   "id": 2,
@@ -12,33 +12,21 @@
   "contains": "Nocco"
  },
  {
-  "id": 3,
-  "color": "pink",
-  "size": "tiny",
-  "contains": "Nocco"
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water",
+  "id": 3
  },
  {
-  "id": 4,
-  "color": "pink",
-  "size": "tiny",
-  "contains": "Nocco"
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water",
+  "id": 4
  },
  {
-  "id": 5,
-  "color": "pink",
-  "size": "tiny",
-  "contains": "Nocco"
- },
- {
-  "id": 6,
-  "color": "pink",
-  "size": "tiny",
-  "contains": "Nocco"
- },
- {
-  "id": 7,
-  "color": "pink",
-  "size": "tiny",
-  "contains": "Nocco"
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water",
+  "id": 5
  }
 ]
