@@ -35,7 +35,7 @@ h1 {
   width: 75%;
 }
 
-#cardButton {
+#deleteButton, #saveButton {
   margin-top: .5rem;
   font-size: 1rem;
   border: 1px white solid;
@@ -44,17 +44,7 @@ h1 {
   background: none;
   cursor: pointer;
   background-color: #181818;
-}
-
-#cardButtonDel {
-  margin-top: .5rem;
-  font-size: 1rem;
-  border: 1px white solid;
-  padding: .5rem;
-  border-radius: .5rem;
-  background: none;
-  cursor: pointer;
-  background-color: #181818;
+  transition: all .5s ease-in-out;
 }
 
 #boxButton {
@@ -66,9 +56,6 @@ h1 {
   cursor: pointer;
   transition: all .5s ease-in-out;
   background-color: #181818;
-}
-#boxButton:hover {
-  transform: scale(1.1);
 }
 
 #main-content {
@@ -105,7 +92,7 @@ h1 {
   background-color: #181818;
 }
 
-#boxCard {
+#boxForm {
   border: 3px white solid;
   border-radius: .5rem;
   font-size: medium;
@@ -118,10 +105,6 @@ h1 {
   gap: .5rem;
   width: 10rem;
   background-color: #181818;
-}
-
-#renderedCard:hover {
-  transform: scale(1.1);
 }
 
 #goToButton {
@@ -147,4 +130,9 @@ h1 {
   color: black;
   width: 65%;
   text-align: center;
+}
+
+#renderedCard:hover, #boxButton:hover, #saveButton:hover, #deleteButton:hover {
+  transform: scale(1.1);
+  filter: invert(1)
 }
