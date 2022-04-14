@@ -1,32 +1,20 @@
 [
  {
   "id": 1,
-  "color": "Blå",
-  "size": "prob tiny",
-  "contains": "Nocco"
+  "color": "grey",
+  "size": "bfds",
+  "contains": "Glass"
  },
  {
   "id": 2,
-  "color": "Pink",
-  "size": "prob tiny",
-  "contains": "Nocco"
+  "color": "grey",
+  "size": "123456",
+  "contains": "Water"
  },
  {
-  "color": "grey",
-  "size": "semi-large",
-  "contains": "Water",
-  "id": 3
- },
- {
-  "color": "grey",
-  "size": "semi-large",
-  "contains": "Water",
-  "id": 4
- },
- {
-  "color": "grey",
-  "size": "semi-large",
-  "contains": "Water",
-  "id": 5
+  "id": 3,
+  "size": "123123",
+  "color": "123",
+  "contains": "123123"
  }
 ]

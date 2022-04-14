@@ -28,14 +28,16 @@ app.post("/api/boxes", (req, res) => {
   };
   boxes.push(newBox);
 
+  console.log(boxes);
+
   fs.writeFile(boxFile, JSON.stringify(boxes, null, 1), (err) => {
     if (err) return console.error(err);
     return res.json(newBox);
   });
 });
 
-app.put("/api/boxes/:ID", (req, res) => {
-  let boxID = parseInt(req.params.ID);
+app.put("/api/boxes", (req, res) => {
+  let boxID = req.body.id;
   let foundBox = boxes.find((box) => box.id === boxID);
 
   if (!foundBox)

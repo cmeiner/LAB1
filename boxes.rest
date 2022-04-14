@@ -5,7 +5,7 @@ GET http://localhost:3000/api/boxes
 GET http://localhost:3000/api/boxes/2
 ### 
 
-POST http://localhost:3000/api/boxes
+POST http://localhost:3000/api/boxes/
 Content-Type:  application/json
 
 {
@@ -16,11 +16,11 @@ Content-Type:  application/json
 
 ###
 
-PUT http://localhost:3000/api/boxes/1
+PUT http://localhost:3000/api/boxes
 Content-Type: application/json
 
 {
-    "id": 1,
+    "id": 6,
     "color": "Blå",
     "size": "prob tiny",
     "contains": "Nocco"
@@ -28,5 +28,5 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3000/api/boxes/4
+DELETE http://localhost:3000/api/boxes/6
 Content-Type: application/json

@@ -24,6 +24,22 @@
     <button id="boxButton">GET BOXES</button>
     <div id="main-content">
     </div>
+    <div id="add-content">
+      <div> 
+        <form id="addForm" onsubmit="handleAdd(event);">
+        <div style="font-size:2rem;">add box</div>
+        <label for="colorInput">Color:</label>
+        <input name="color" type="text" id="colorInput" required>
+        <label for="sizeInput">Size:</label>
+        <input name="size" type="text" id="sizeInput" required>
+        <label for="containsInput">Contains:</label>
+        <input name="contains" type="text" id="containsInput" required>
+        <div>
+        <button type="submit" id="saveButton">Add</button>
+        </div>
+        </form>
+        </div>
+    </div>
   </div>
   </div>
   <div class="footer flex-center">
