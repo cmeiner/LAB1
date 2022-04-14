@@ -1,20 +1,26 @@
 [
  {
   "id": 1,
-  "color": "grey",
-  "size": "bfds",
-  "contains": "Glass"
+  "size": "123",
+  "color": "123",
+  "contains": "123"
  },
  {
   "id": 2,
   "color": "grey",
-  "size": "123456",
+  "size": "semi-large",
   "contains": "Water"
  },
  {
-  "id": 3,
-  "size": "123123",
-  "color": "123",
-  "contains": "123123"
+  "id": 4,
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water"
+ },
+ {
+  "id": 5,
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water"
  }
 ]

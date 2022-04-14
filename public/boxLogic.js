@@ -64,7 +64,7 @@ const handleSave = async (event) => {
     }
     document.getElementById(
       "mainDiv"
-    ).innerHTML = `<h3 style="text-align: center; margin-top:2rem;">Saved!</h3>`;
+    ).innerHTML = `<h3 style="text-align: center; margin-top:2rem;">Changes saved!</h3>`;
     setTimeout(() => {
       location.href = "/";
     }, 1500);
@@ -80,7 +80,7 @@ const deleteBox = async () => {
     });
     document.getElementById(
       "mainDiv"
-    ).innerHTML = `<h3 style="text-align: center; margin-top:2rem;">Deleted!</h3>`;
+    ).innerHTML = `<h3 style="text-align: center; margin-top:2rem;">Box deleted!</h3>`;
     setTimeout(() => {
       location.href = "/";
     }, 1500);
