@@ -1,10 +1,4 @@
-## LAB 1 - REST API
-
-av: Christian Meiner, FED21G.  
-14 April, 2022.
-
----
-
+# LAB 1 - REST API
 ### **Beskrivning av projekt**
 
 Projektet innehåller fem stycken endpoints.
@@ -41,3 +35,7 @@ I terminalen skrivs:
 Följt av:
 
 `npm start` - För att starta projektet.
+
+---
+Av: Christian Meiner, FED21G.  
+14 April, 2022
