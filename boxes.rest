@@ -1,16 +1,32 @@
-GET http://localhost:3000/boxes
+GET http://localhost:3000/api/boxes
 
 ###
 
-POST http://localhost:3000/boxes
+GET http://localhost:3000/api/boxes/2
+### 
+
+POST http://localhost:3000/api/boxes/
 Content-Type:  application/json
 
+{
+    "color": "grey",
+    "size": "semi-large",
+    "contains": "Water"
+}
+
 ###
 
-PUT http://localhost:3000/boxes/2
+PUT http://localhost:3000/api/boxes
 Content-Type: application/json
 
+{
+    "id": 6,
+    "color": "Blå",
+    "size": "prob tiny",
+    "contains": "Nocco"
+}
+
 ###
 
-DELETE http://localhost:3000/boxes/2
+DELETE http://localhost:3000/api/boxes/6
 Content-Type: application/json
