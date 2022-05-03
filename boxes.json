@@ -1,26 +1,74 @@
 [
  {
-  "id": 1,
-  "size": "123",
-  "color": "123",
-  "contains": "123"
+  "id": "a99e",
+  "size": "small",
+  "color": "blue",
+  "contains": "glue"
  },
  {
-  "id": 2,
+  "id": "6199",
   "color": "grey",
   "size": "semi-large",
   "contains": "Water"
  },
  {
-  "id": 4,
+  "id": "ad1b",
   "color": "grey",
   "size": "semi-large",
   "contains": "Water"
  },
  {
-  "id": 5,
+  "id": "3a68",
+  "size": "dasdasd",
+  "color": "asdas",
+  "contains": "asdasd"
+ },
+ {
+  "id": "d5c9",
   "color": "grey",
   "size": "semi-large",
   "contains": "Water"
+ },
+ {
+  "id": "d0f2",
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water"
+ },
+ {
+  "id": "5af9",
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water"
+ },
+ {
+  "id": "8f39",
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water"
+ },
+ {
+  "id": "0d98",
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water"
+ },
+ {
+  "id": "97fe",
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water"
+ },
+ {
+  "id": "fa61",
+  "color": "grey",
+  "size": "semi-large",
+  "contains": "Water"
+ },
+ {
+  "id": "Fa37",
+  "color": "Blå",
+  "size": "prob tiny",
+  "contains": "Nocco"
  }
 ]

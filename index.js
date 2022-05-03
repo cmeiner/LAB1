@@ -4,6 +4,7 @@ const port = 3000;
 const app = express();
 const boxFile = "./boxes.json";
 const boxes = require(boxFile);
+const { customAlphabet } = require('nanoid') 
 
 app.use("/", express.static("public"));
 app.use(express.json());
@@ -13,7 +14,7 @@ app.get("/api/boxes", (req, res) => {
 });
 
 app.get("/api/boxes/:ID", (req, res) => {
-  let boxID = parseInt(req.params.ID);
+  let boxID = (req.params.ID);
   let foundBox = boxes.find((box) => box.id === boxID);
 
   if (!foundBox)
@@ -22,8 +23,9 @@ app.get("/api/boxes/:ID", (req, res) => {
 });
 
 app.post("/api/boxes", (req, res) => {
+  const nanoid = customAlphabet('1234567890abcdef', 4)
   let newBox = {
-    id: boxes.length + 1,
+    id: nanoid(),
     ...req.body,
   };
   boxes.push(newBox);
@@ -57,7 +59,7 @@ app.put("/api/boxes", (req, res) => {
 });
 
 app.delete("/api/boxes/:ID", (req, res) => {
-  let boxID = parseInt(req.params.ID);
+  let boxID = (req.params.ID);
   let foundBox = boxes.find((box) => box.id === boxID);
 
   if (!foundBox)
